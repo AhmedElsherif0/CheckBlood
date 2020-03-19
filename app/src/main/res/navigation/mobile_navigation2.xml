@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_main">
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.checkblood.view.Fragment.HomeCycle.DrawerFragment.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_notification_setting"
+        android:name="com.example.checkblood.view.Fragment.HomeCycle.DrawerFragment.NotificationSettingFragment"
+        android:label="@string/notificationsetting"
+        tools:layout="@layout/fragment_notification_setting" />
+
+    <fragment
+        android:id="@+id/nav_favorite"
+        android:name="com.example.checkblood.view.Fragment.HomeCycle.DrawerFragment.FavoriteFragment"
+        android:label="@string/menufavorite"
+        tools:layout="@layout/fragment_favorite" />
+
+    <fragment
+        android:id="@+id/nav_main"
+        android:name="com.example.checkblood.view.Fragment.HomeCycle.HomeFragments.HomeFragment"
+        android:label="@string/main"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_instructions"
+        android:name="com.example.checkblood.view.Fragment.HomeCycle.DrawerFragment.InstructionsUsesFragment"
+        android:label="@string/main"
+        tools:layout="@layout/fragment_instructions_uses" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.checkblood.view.Fragment.HomeCycle.DrawerFragment.ContactUsFragment"
+        android:label="@string/menucontact"
+        tools:layout="@layout/fragment_contact_us" />
+
+    <fragment
+        android:id="@+id/nav_About"
+        android:name="com.example.checkblood.view.Fragment.HomeCycle.DrawerFragment.AboutAppFragment"
+        android:label="menu_mainfragment"
+        tools:layout="@layout/fragment_about_app" />
+
+    <fragment
+        android:id="@+id/nav_rate_app"
+        android:name="com.example.checkblood.view.Fragment.HomeCycle.DrawerFragment.RateAppFragment"
+        android:label="menu_main"
+        tools:layout="@layout/fragment_rateapp" />
+</navigation>

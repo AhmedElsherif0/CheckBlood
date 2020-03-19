@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk_960_1600">
+
+
+    <ImageView
+        android:id="@+id/splashfragment_IV_logo"
+        android:layout_width="@dimen/dim_200"
+        android:layout_height="@dimen/dim_200"
+        android:layout_centerInParent="true"
+        android:background="@drawable/logo_1024"
+        android:contentDescription="@string/app_name" />
+
+
+</RelativeLayout>

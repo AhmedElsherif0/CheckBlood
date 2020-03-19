@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/article_tv_protectionOfDiseases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/dim_4dp"
+        android:padding="@dimen/dim_4dp"
+        android:text="@string/protection_of_the_diseases"
+        android:textSize="@dimen/dim_16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/article_Iv_favorite"
+        android:layout_width="@dimen/dim_30dp"
+        android:layout_height="@dimen/dim_30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/favorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/article_Iv_imageOfDiseases"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_150"
+        android:background="@color/LightGray"
+        android:padding="@dimen/dim_2dp"
+        android:paddingTop="@dimen/dim_2dp"
+        android:src="@drawable/logo_1024"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_tv_protectionOfDiseases" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

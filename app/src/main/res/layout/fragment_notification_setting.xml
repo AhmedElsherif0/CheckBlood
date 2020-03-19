@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LightGray">
+
+        <TextView
+            android:id="@+id/notification_setting_tx_textexample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/notification_setting"
+            android:textColor="@color/DarkBlue"
+            android:textSize="@dimen/dim_24"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textforexample"
+            android:padding="@dimen/dim_8dp"
+            android:textSize="@dimen/dim_20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/dim_8dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+                <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/dim_40"
+                    android:text="@string/blood_type"
+                    android:textSize="@dimen/dim_20sp"
+                    android:textStyle="bold"
+                    android:background="@color/LightGray"
+                    android:paddingStart="@dimen/dim_8dp"
+                    android:paddingEnd="@dimen/dim_8dp"
+                    android:gravity="center_vertical">
+                </TextView>
+
+
+            <RadioGroup
+                android:id="@+id/notification_setting_rg_bloodtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:layout_marginBottom="@dimen/dim_10dp"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginEnd="@dimen/dim_8dp">
+
+
+                <CheckBox
+                    android:id="@+id/notification_setting_rb_a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a1"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    />
+
+                <RadioButton
+                    android:id="@+id/notification_setting_rb_a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a2"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    />
+
+                <RadioButton
+                    android:id="@+id/notification_setting_rb_o1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/o1"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/notification_setting_rg_bloodtype2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="@dimen/dim_12dp"
+                android:layout_marginBottom="@dimen/dim_12dp"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginEnd="@dimen/dim_8dp">
+
+                <RadioButton
+                    android:id="@+id/notification_setting_rg_o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/o2"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/notification_setting_rg_ab1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ab1"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/notification_setting_rg_ab2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ab2"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_40"
+                android:text="@string/cities"
+                android:textSize="@dimen/dim_20sp"
+                android:textStyle="bold"
+                android:background="@color/LightGray"
+                android:paddingStart="@dimen/dim_8dp"
+                android:paddingEnd="@dimen/dim_8dp"
+                android:gravity="center_vertical">
+            </TextView>
+
+
+            <RadioGroup
+                android:id="@+id/notification_setting_rg_cities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:layout_marginBottom="@dimen/dim_10dp"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginEnd="@dimen/dim_8dp">
+
+
+                <RadioButton
+                    android:id="@+id/notification_setting_rb_cairo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cairo"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    />
+
+                <RadioButton
+                    android:id="@+id/notification_setting_rb_gharbia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gharbia"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    />
+
+                <RadioButton
+                    android:id="@+id/notification_setting_rb_almenia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/almenia"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/notification_setting_rg_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="@dimen/dim_12dp"
+                android:layout_marginBottom="@dimen/dim_12dp"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginEnd="@dimen/dim_8dp">
+
+                <RadioButton
+                    android:id="@+id/notification_setting_rg_elsharqia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/elsharqia"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/notification_setting_rg_kafr_elshekh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kafr_elshekh"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/notification_setting_rg_eldaqhleya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eldaqhleya"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/notification_setting_btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_50"
+            android:layout_marginStart="@dimen/dim_12dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="@dimen/dim_12dp"
+            android:background="@color/DarkBlue"
+            android:text="@string/save"
+            android:textColor="@color/white">
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>
